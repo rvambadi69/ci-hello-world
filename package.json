@@ -1,0 +1,9 @@
+{
+  "name": "ci-hello-world-weather-app",
+  "version": "1.0.0",
+  "description": "Simple weather app for CI exercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
