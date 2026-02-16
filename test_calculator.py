@@ -1,8 +1,8 @@
 import pytest
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, square
 
 def test_add():
-  assert add(2, 3) == 8
+  assert add(2, 3) == 5
   assert add(-1, 1) == 0
 
 def test_subtract():
@@ -19,3 +19,7 @@ def test_divide():
 def test_divide_by_zero():
   with pytest.raises(ValueError):
     divide(10, 0)
+
+def test_square():
+  assert square(3) == 9
+  assert square(-4) == 16
